@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap');
+
+*{padding: 0; margin: 0; box-sizing: border-box;
+    font-family: 'Andika', sans-serif;
+}
+
+
+/* color variable */
+:root{
+    --fg:#e8426b;
+    --text-light:#303030;
+    --text-dark:#202020;
+}
+
+body{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.info{
+    width: 35vw;
+    color: var(--text-light);
+}
+
+.info p, .info li{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.profile_img{
+    width: 100%;
+
+}
+
+.profile_img img{
+    width: 100%;
+}
+
+.profile_img h3{
+    position: relative;
+    top: -50px;
+    margin-left: 10px;
+    color: var(--text-light);
+} 
+
+table{
+    padding: 10px;
+    vertical-align: text-top;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.icon_box{width: 30px;}
+.icon_box_large{width: 40px;}
+
+.info ul{list-style: none;}
+
+
+.detail{
+    width: 100%;
+}
+
+.detail h1{
+    color: var(--text-light);
+}
+
+.layout{padding: 10px;}
+
+.date, i{
+    color:var(--fg);
+}
+
+.secondary-heading{
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+footer{
+    align-items: center;
+}
+
+footer i, a{
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--fg);
+}
+
+footer div{
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+hr{ background-color: var(--text-light);}
+@media only screen and (max-width:600px){
+    body{
+        flex-direction: column;
+
+    }
+    .info{width: 100%;}
+    .layout{width: 100%;}
+}
