@@ -12,7 +12,7 @@
     --text-dark:#202020;
 }
 
-body{
+.body{
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -91,12 +91,16 @@ table{
 
 footer{
     align-items: center;
+    width: 100%;
+    background-color: #e8426b;
+    color: #fff;
 }
 
 footer i, a{
     text-decoration: none;
     font-size: 16px;
-    color: var(--fg);
+    color: #fff;
+
 }
 
 footer div{
@@ -107,7 +111,7 @@ footer div{
 
 hr{ background-color: var(--text-light);}
 @media only screen and (max-width:600px){
-    body{
+    .body{
         flex-direction: column;
 
     }
